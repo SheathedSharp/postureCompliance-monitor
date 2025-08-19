@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "使用express框架 同时服务于小程序和医护端 # 配置 ## 数据库配置位置 /database.js ## 端口配置位置 /app.js",
+  "main": "app.js",
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "express": "^4.18.1",
+    "js-base64": "^3.7.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.4"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "node-schedule": "^2.1.0",
+    "nodejs-websocket": "^1.7.2",
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chh-yu/ylsh-backend.git"
+  },
+  "author": "chh-yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chh-yu/ylsh-backend/issues"
+  },
+  "homepage": "https://github.com/chh-yu/ylsh-backend#readme"
+}
