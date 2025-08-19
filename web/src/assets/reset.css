@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+input,textarea,button,select{
+    border: none;
+}
+input:focus,textarea:focus,button:focus,select:focus{
+    outline: none;
+    outline-offset: 0;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
