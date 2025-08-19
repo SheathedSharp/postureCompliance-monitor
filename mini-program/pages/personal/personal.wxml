@@ -1,0 +1,47 @@
+<!--pages/personal/personal.wxml-->
+
+<view class="profile">
+  <view class="header">
+    个人
+  </view>
+  <image class="avatar" wx:if="{{info.nickname && info.avatar}}" mode="aspectFill" src="{{info.avatar}}"/>
+  <view class="name" wx:if="{{info.nickname && info.avatar}}">{{info.nickname}}</view>
+  <button style="width: 50%; margin-top: 20rpx;" bindtap="getUserProfile" wx:else>获取头像昵称</button>
+  <!-- <button style="width: 50%; margin-top: 20rpx;" bindtap="getUserProfile">更新头像昵称</button> -->
+</view>
+<view class="info-list" wx:if="{{info.nickname && info.avatar}}">
+  <view class="info-item">
+    <view class="info-item-icon"><image mode="aspectFill" src="/image/personal/name.png" /></view>
+    <view class="info-item-label">姓名</view>
+    <view class="info-item-value" wx:if="{{edit_mode !='realname'}}">{{info.realname}}</view>
+    <view class="info-item-input" wx:else><input type="text" value="{{editing_value}}" name="realname" auto-focus bindinput="on_edit" /></view>
+    <view class="info-item-edit" data-key="realname" bindtap="press_edit" wx:if="{{edit_mode !='realname'}}" >
+      <image mode="aspectFill" src="/image/personal/edit.png"/>
+    </view>
+    <view class="info-item-edit" wx:else>
+      <image mode="aspectFill" src="/image/personal/save.png" data-key="realname" bindtap="press_save"/>
+      <image mode="aspectFill" src="/image/personal/cancel.png" data-key="realname" bindtap="press_cancel"/>
+    </view>
+  </view>
+  <view class="info-item">
+    <view class="info-item-icon"><image mode="aspectFill" src="/image/personal/phone.png" /></view>
+    <view class="info-item-label">手机号码</view>
+    <view class="info-item-value" wx:if="{{edit_mode !='phone'}}">{{info.phone}}</view>
+    <view class="info-item-input" wx:else><input value="{{editing_value}}" type="text" name="phone" auto-focus bindinput="on_edit" /></view>
+    <view class="info-item-edit" data-key="phone" bindtap="press_edit" wx:if="{{edit_mode !='phone'}}" >
+      <image mode="aspectFill" src="/image/personal/edit.png"/>
+    </view>
+    <view class="info-item-edit" wx:else>
+      <image mode="aspectFill" src="/image/personal/save.png" data-key="phone" bindtap="press_save"/>
+      <image mode="aspectFill" src="/image/personal/cancel.png" data-key="phone" bindtap="press_cancel"/>
+    </view>
+  </view>
+  <view class="info-item">
+    <view class="info-item-icon"><image mode="aspectFill" src="/image/personal/dialog.png" /></view>
+    <view class="info-item-label">出院小结</view>
+    <view class="info-item-value"><image mode="aspectFill" src="{{info.dialog}}" data-src="{{info.dialog}}" bindtap="previewImage"/></view>
+    <view class="info-item-edit" bindtap="upload_dialog">
+      <image mode="aspectFill" src="/image/personal/upload.png"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"ec-canvas": "../../ec-canvas/ec-canvas",
+		"van-icon": "../../miniprogram_npm/@vant/weapp/icon/index"
+  },
+  "navigationStyle":"custom"
+}

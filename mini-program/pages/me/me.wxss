@@ -1,0 +1,70 @@
+page {
+	background: -webkit-linear-gradient(top, rgba(27, 47, 81, 1), rgba(27, 47, 81, 1));
+}
+
+.titou {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20%;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.container-item {
+	display: flex;
+	flex-direction: column;
+	width: 33.3%;
+	margin-left: 75rpx;
+	font-size: 30rpx;
+	font-weight: bolder;
+	color: cornflowerblue;
+}
+
+.btn {
+	margin-top: 30rpx;
+	width: 300rpx;
+	height: 80rpx;
+	border-radius: 20rpx;
+	font-size: 45rpx;
+	line-height: 80rpx;
+	font-weight: 800;
+	color: white;
+}
+
+.login {
+	margin-top: 20rpx;
+	margin-bottom: 50rpx;
+	height: 80rpx;
+	width: 50%;
+	background-color: black;
+	font-size: 28rpx;
+	display: flex;
+	border-radius: 10rpx;
+	text-align: center;
+	justify-content: center;
+}
+
+
+
+.avatar {
+	width: 140rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar .img {
+	width: 140rpx;
+	height: 140rpx;
+	border-radius: 50%;
+}
+
+.avatar .txt {
+	color: #fff;
+	margin-top: 10rpx;
+}

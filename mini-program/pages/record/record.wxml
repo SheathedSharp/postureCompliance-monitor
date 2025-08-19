@@ -1,0 +1,79 @@
+<user-btn />
+
+<view class="record-list-wrapper">
+	<view bindtap="changeListExpand">
+		<image wx:if="{{!list_expand}}" class="arrow-bottom" mode="aspectFit" src="/image/record/arrowbottom.png"></image>
+	</view>
+	<scroll-view wx:if="{{list_expand}}" enable-flex scroll-x class="record-list">
+		<view class="record-item" wx:for="{{recordList}}" bindtap="onTapRecordItem" data-id="{{item.id}}" data-remark="{{item.remark}}" wx:key="id">
+			<view style="color: white; padding-top: 1rem;">{{item.timetoshow}}</view>
+			<view style="color: white; padding-top: 1rem;">{{item.remark}}</view>
+
+			<!-- <input style="position: absolute; bottom: 0px; color: white; z-index: 2;" type="text" value="{{item.remark}}"/> -->
+		</view>
+	</scroll-view>
+	<view bindtap="changeListExpand">
+		<image wx:if="{{list_expand}}" style="transform: rotate(180deg);" class="arrow-bottom" mode="aspectFit" src="/image/record/arrowbottom.png"></image>
+	</view>
+</view>
+<!-- 检测 -->
+<view class="testing">
+	<view style="display: flex;justify-content: space-around;font-size: 35rpx;margin-top: 40rpx;">
+		<view style="color:{{index==0?'white':''}}" bindtap="bar">检测</view>
+	</view>
+	<!-- 图表 容器 -->
+	<view class="echarts">
+		<ec-canvas id="lazy-mychart-dom" canvas-id="lazy-mychart" ec="{{lazyEc}}"></ec-canvas>
+	</view>
+</view>
+
+<!-- 汇总 -->
+<view class="huizong">
+	<view style="display: flex;justify-content: space-around;font-size: 35rpx;margin-top: 40rpx;">
+		<view style="color:{{index==0?'white':''}}" bindtap="bar">检测</view>
+	</view>
+	<!-- 图表 容器 -->
+	<view class="echarts2">
+		<ec-canvas id="lazy-mychart-dom2" canvas-id="lazy-mychart2" ec="{{lazyEc2}}"></ec-canvas>
+	</view>
+</view>
+
+<!-- 备注 -->
+<view class="remark">
+	<view class="remark-title">
+		当前备注：{{recordList[index].remark}}
+	</view>
+	<view class="remark-input">
+		<input style="color: greenyellow; width: 80%;" maxlength="255" bindinput="remarkInput" placeholder="输入备注后点击图标进行备注更改" />
+		<van-icon name="font-o" color="white" size="30px" custom-class="remarkInput-icon" bind:click="rewriteRemark" />
+	</view>
+</view>
+
+<!-- 
+<view class="summary">
+<text class="title">汇总</text>
+<view class="remind">
+	<text>警戒</text> 
+	<view class="box"></view>
+<text class="time">2分钟</text>
+</view>
+<view class="remind">
+	<text>提醒</text>
+	<view class="box"></view>
+	<text class="time">20分钟</text>
+	</view>
+<view class="remind">
+	<text>正常</text>
+	<view class="box"></view>
+	<text class="time">8小时 2分钟</text>
+</view> -->
+
+
+<!-- 状态 -->
+<!-- <view class="state">
+  <view class="row">
+    <view class="color"></view>
+    <text>正常</text>
+  </view>
+  <text class="s1">实时状态</text>
+</view> -->

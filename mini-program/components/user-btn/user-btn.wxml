@@ -1,0 +1,6 @@
+<!--components/user_btn.wxml-->
+<view class="user" bindtap="gotome">
+	<navigator open-type="switchTab" url="/pages/personal/personal">
+		<image class="image" src="/image/person.png"></image>
+	</navigator>
+</view>

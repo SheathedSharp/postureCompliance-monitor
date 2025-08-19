@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/setting/setting",
+    "pages/record/record",
+    "pages/me/me",
+    "pages/message/message",
+    "pages/chat/chat",
+    "pages/personal/personal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#27468e",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#0F3978"
+  },
+  "tabBar": {
+    "selectedColor": "#0F3978",
+    "backgroundColor": "#B0C8EE",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "/image/tabBar/setting.png",
+        "selectedIconPath": "/image/tabBar/setting_selected.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/image/tabBar/home.png",
+        "selectedIconPath": "/image/tabBar/home_selected.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录",
+        "iconPath": "/image/tabBar/record.png",
+        "selectedIconPath": "/image/tabBar/record_selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "/image/personal/personal.png",
+        "selectedIconPath": "/image/personal/personal_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-count-down": "@vant/weapp/count-down/index",
+    "user-btn": "components/user-btn/user-btn"
+  }, 
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    },
+    "scope.bluetooth": {
+      "desc": "你的蓝牙信息将用于小程序连接设备"
+    }
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

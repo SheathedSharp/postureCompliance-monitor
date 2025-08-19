@@ -1,0 +1,13 @@
+/* components/user_btn.wxss */
+.user {
+	margin-top: 30px;
+	margin-left:8px;
+}
+
+.user .image {
+	background-color: #42577B;
+	width: 60rpx;
+	height: 60rpx;
+	display: flex;
+	border-radius: 8rpx;
+}

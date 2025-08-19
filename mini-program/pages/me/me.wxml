@@ -1,0 +1,26 @@
+
+<!-- 题头 -->
+
+<view class="titou">
+	<view style="display: flex;flex-direction: column;align-items: center;">
+		<image style="width: 150rpx;height: 150rpx;border-radius: 50%;margin-top: 20rpx;" src="{{avatarUrl}}"></image>
+		<view style="font-size:15px;color:#fff;font-weight: bolder;margin-top: 20rpx;">{{nickName}}</view>
+	</view>
+</view>
+
+<button wx:if="{{!isLogin}}" size="default" type="primary" class="btn" bindtap="getuserinfo">授权登录</button>
+
+
+<!-- 退出登录 -->
+<view wx:if="{{isLogin}}" style="margin-top: 300rpx;">
+	<view style="text-align:center;font-weight: bolder;color:#fff;font-size: 35rpx;" bindtap="outuser">退出登录></view>
+</view>
+
+
+
+
+
+
+
+
+

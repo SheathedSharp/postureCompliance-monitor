@@ -1,0 +1,8 @@
+{
+	"component": true,
+	"usingComponents": {
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-progress": "@vant/weapp/progress/index"
+  }
+}

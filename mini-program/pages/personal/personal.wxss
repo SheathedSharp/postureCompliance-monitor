@@ -1,0 +1,71 @@
+/* pages/personal/personal.wxss */
+page{
+  background: white;
+}
+.profile{
+  position: relative;
+  background: rgb(114, 173, 240);
+  padding-top: 250rpx;
+  text-align: center;
+  padding-bottom: 60rpx;
+  color: white;
+}
+.profile .header{
+  position: absolute;
+  height: 250rpx;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 250rpx;
+  position: fixed;
+  top: 0;
+}
+.profile .avatar{
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+  background-color: white;
+  border: 2rpx solid white;
+}
+.dialog-img{
+  width: 150rpx;
+  height: 150rpx;
+  background-color: white;
+  border-radius: 5rpx;
+}
+.info-list{
+  padding: 60rpx 60rpx;
+}
+.info-item{
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-bottom: 4rpx solid #666;
+  padding: 20rpx;
+}
+.info-item-icon image{
+  width: 50rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}
+.info-item-label{
+  flex-grow: 1;
+}
+.info-item-value{
+  margin-right: 40rpx;
+}
+.info-item-value image{
+  width: 50rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}
+.info-item-input{
+  width: 200rpx;
+}
+.info-item-edit image{
+  width: 50rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}

@@ -1,0 +1,230 @@
+page {
+  background: -webkit-linear-gradient(top, rgba(27, 47, 81, 1), rgba(27, 47, 81, 1));
+}
+
+.open {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+/* 状态盒子 */
+.status-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: whitesmoke; */
+}
+
+.retransmission {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 2rpx solid white;
+  margin-right: 90rpx;
+  margin-bottom: 60rpx;
+}
+
+.empty {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #0061b2;
+  border-radius: 50%;
+  border: none;
+  margin-left: 90rpx;
+  margin-bottom: 60rpx;
+}
+
+/* 当前设备记录条数盒子 */
+.record-num-box {
+  width: auto;
+  color: gray;
+  font-size: 30rpx;
+}
+
+.standby {
+  width: 200rpx;
+  height: 70rpx;
+  background: #3560A5;
+  color: #fff;
+  font-size: 42rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  margin: 10px auto;
+}
+
+/*医生通知区域*/
+.doctor {
+  background-color: #3462B2;
+  height: 200rpx;
+  display: flex;
+  border-radius: 25rpx;
+  margin: 20rpx;
+}
+
+.doctor image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 35rpx;
+  margin: 20rpx;
+}
+
+.row {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.row1 {
+  width: 480rpx;
+  height: 100rpx;
+}
+
+.name {
+  color: #e9ebf1;
+  font-size: 38rpx;
+  float: left;
+}
+
+.time {
+  font-size: 30rpx;
+  color: #9abaeb;
+  float: right;
+}
+
+.message {
+  color: #e9ebf1;
+  font-size: 25rpx;
+  float: left;
+}
+
+
+/*新闻列表*/
+.news-item {
+  border-radius: 25rpx 30rpx 0 0;
+  background-color: #3462B2;
+  margin: 20rpx;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.list1 {
+  display: flex;
+  height: 230rpx;
+  border-bottom: 2rpx solid #a6b4ce;
+  margin: 20rpx auto;
+}
+
+.list1 image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 35rpx;
+  display: block;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  color: #e9ebf1;
+  height: 140rpx;
+  width: 400rpx;
+}
+
+.newsinfo {
+  font-size: 25rpx;
+  color: #84ACE2;
+}
+
+.newstime {
+  float: left;
+}
+
+.source {
+  float: right;
+  margin-left: 25rpx;
+}
+
+@keyframes doCircle {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(135deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.circle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  margin: auto;
+}
+
+.doCircle {
+  animation: doCircle 4s infinite;
+}
+
+.scontainer2 {
+
+  z-index: 1000;
+  top: 30%;
+  left: 5%;
+  width: 90%;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 500rpx;
+  background-color: #3462B2;
+  overflow-y: auto;
+
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rssi {
+  font-size: 14px;
+  color: #999;
+}

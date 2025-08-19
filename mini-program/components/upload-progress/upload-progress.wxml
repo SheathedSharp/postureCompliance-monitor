@@ -1,0 +1,15 @@
+<!--components/upload-progress/upload-progress.wxml-->
+<van-overlay show="{{ show }}">
+  <view class="wrapper">
+    <view class="block">
+      <view class="title_container">
+        <view class="title">上传进度</view>
+      </view>
+      <van-steps steps="{{ steps }}" active="{{ active }}" />
+      <view wx:if="{{active != 0}}">
+        <view style="margin-bottom: 20rpx; width: 100%; text-align: center; color: gainsboro;">收取情况：{{recordIndex}}/{{recordTotalNum}}</view>
+        <van-progress percentage="{{ percentage }}" stroke-width="8" />
+      </view>
+    </view>
+  </view>
+</van-overlay>

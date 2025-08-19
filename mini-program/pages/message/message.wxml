@@ -1,0 +1,8 @@
+<view class="message">
+
+</view>
+
+<view class="sent">
+<input class="input" type="text"/>
+<button class="btn">发送</button>
+</view>
