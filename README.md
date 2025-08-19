@@ -232,18 +232,6 @@ This system was developed for clinical research on posture compliance during ret
   <p><em>Figure 7: Machine learning model performance evaluation and compliance prediction accuracy</em></p>
 </div>
 
-#### Compliance with Intervention - Daytime Analysis
-<div align="center">
-  <img src="docs/images/compliance_with_intervention(daytime).png" alt="Daytime Compliance Analysis" width="600"/>
-  <p><em>Patient compliance patterns during daytime monitoring with intervention effects</em></p>
-</div>
-
-#### Compliance with Intervention - Nighttime Analysis
-<div align="center">
-  <img src="docs/images/compliance_with_intervention(nighttime).png" alt="Nighttime Compliance Analysis" width="600"/>
-  <p><em>Patient compliance patterns during nighttime monitoring with intervention effects</em></p>
-</div>
-
 ## 📈 Clinical Impact
 
 The system has demonstrated significant improvements in:
