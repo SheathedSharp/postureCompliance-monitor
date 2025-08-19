@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "Posture Compliance Monitor for Retinal Detachment Rehabilitation"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "[Please update with actual author names]"
+    given-names: "[First Author]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+identifiers:
+  - type: doi
+    value: 10.48130/vns-0025-0014
+    description: "The DOI of the paper describing this software"
+repository-code: "https://github.com/[your-username]/postureCompliance-monitor"
+url: "https://www.maxapress.com/article/doi/10.48130/vns-0025-0014"
+abstract: >-
+  A comprehensive system for monitoring patient posture compliance 
+  during retinal detachment rehabilitation, consisting of backend API, 
+  web interface, mobile application, and data analysis components.
+keywords:
+  - retinal detachment
+  - posture monitoring
+  - patient compliance
+  - healthcare technology
+  - machine learning
+  - medical devices
+license: "Academic Research License"
+version: "1.0.0"
+date-released: "2025-01-01"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "[Please update with actual author names]"
+      given-names: "[First Author]"
+  doi: "10.48130/vns-0025-0014"
+  journal: "Visual Neuroscience"
+  title: "Posture Compliance Monitoring System for Retinal Detachment Rehabilitation"
+  year: 2025
+  url: "https://www.maxapress.com/article/doi/10.48130/vns-0025-0014"
